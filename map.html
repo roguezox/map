@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7665028f166f11a747379b9f0b307bd3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7665028f166f11a747379b9f0b307bd3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7665028f166f11a747379b9f0b307bd3 = L.map(
+                "map_7665028f166f11a747379b9f0b307bd3",
+                {
+                    center: [26.9240458, 75.8267144],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7665028f166f11a747379b9f0b307bd3);
+
+            
+
+        
+    
+            var tile_layer_a24c6cfaf40bfa2283b04c6255e03831 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a24c6cfaf40bfa2283b04c6255e03831.addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var tile_layer_3996cc4b360e42d4951fd72a08dceacb = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google Maps Dark Mode", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3996cc4b360e42d4951fd72a08dceacb.addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var marker_5f9659f91b3098402754b959e2bca48a = L.marker(
+                [26.9240458, 75.8267144],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_a7c3c9658aac21f3afb0fce6c997f794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f9659f91b3098402754b959e2bca48a.setIcon(icon_a7c3c9658aac21f3afb0fce6c997f794);
+        
+    
+        var popup_2c6038558a98a01943f86764e89766c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91042c246e98923fb445f8642361b8f6 = $(`<div id="html_91042c246e98923fb445f8642361b8f6" style="width: 100.0%; height: 100.0%;">Hawa Mahal</div>`)[0];
+                popup_2c6038558a98a01943f86764e89766c9.setContent(html_91042c246e98923fb445f8642361b8f6);
+            
+        
+
+        marker_5f9659f91b3098402754b959e2bca48a.bindPopup(popup_2c6038558a98a01943f86764e89766c9)
+        ;
+
+        
+    
+    
+            marker_5f9659f91b3098402754b959e2bca48a.bindTooltip(
+                `<div>
+                     Hawa Mahal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f6f990f6418055b09a474183a898d14 = L.marker(
+                [26.9257943, 75.8236714],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_b2b05477870c552ae10f11f1b93d50ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f6f990f6418055b09a474183a898d14.setIcon(icon_b2b05477870c552ae10f11f1b93d50ce);
+        
+    
+        var popup_7a94203a651cd09f4104bcc1aa97d335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5c26db72c91da6da51c057c72d5d587 = $(`<div id="html_f5c26db72c91da6da51c057c72d5d587" style="width: 100.0%; height: 100.0%;">The City Palace</div>`)[0];
+                popup_7a94203a651cd09f4104bcc1aa97d335.setContent(html_f5c26db72c91da6da51c057c72d5d587);
+            
+        
+
+        marker_4f6f990f6418055b09a474183a898d14.bindPopup(popup_7a94203a651cd09f4104bcc1aa97d335)
+        ;
+
+        
+    
+    
+            marker_4f6f990f6418055b09a474183a898d14.bindTooltip(
+                `<div>
+                     The City Palace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40661a9585474baa5f8e0a1486ff2e3f = L.marker(
+                [26.924762, 75.82456],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_66495a2aee4968501ab0d935f55299cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40661a9585474baa5f8e0a1486ff2e3f.setIcon(icon_66495a2aee4968501ab0d935f55299cd);
+        
+    
+        var popup_b0e35cc5b5cae6e0da3591847086ed97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263cdbdb6bc3d4655cbfd69e51bc5a37 = $(`<div id="html_263cdbdb6bc3d4655cbfd69e51bc5a37" style="width: 100.0%; height: 100.0%;">Jantar Mantar - Jaipur</div>`)[0];
+                popup_b0e35cc5b5cae6e0da3591847086ed97.setContent(html_263cdbdb6bc3d4655cbfd69e51bc5a37);
+            
+        
+
+        marker_40661a9585474baa5f8e0a1486ff2e3f.bindPopup(popup_b0e35cc5b5cae6e0da3591847086ed97)
+        ;
+
+        
+    
+    
+            marker_40661a9585474baa5f8e0a1486ff2e3f.bindTooltip(
+                `<div>
+                     Jantar Mantar - Jaipur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b8b543f00420cf9d9cc8d20aa142d0e = L.marker(
+                [26.9123097, 75.8211759],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_3dc6f123675f40bcaa4f9ae045d24763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b8b543f00420cf9d9cc8d20aa142d0e.setIcon(icon_3dc6f123675f40bcaa4f9ae045d24763);
+        
+    
+        var popup_98dfe49b616d478819941796c0343dfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2910854f11714c7e72aeda776f037d9 = $(`<div id="html_b2910854f11714c7e72aeda776f037d9" style="width: 100.0%; height: 100.0%;">Jaipur Zoo</div>`)[0];
+                popup_98dfe49b616d478819941796c0343dfc.setContent(html_b2910854f11714c7e72aeda776f037d9);
+            
+        
+
+        marker_4b8b543f00420cf9d9cc8d20aa142d0e.bindPopup(popup_98dfe49b616d478819941796c0343dfc)
+        ;
+
+        
+    
+    
+            marker_4b8b543f00420cf9d9cc8d20aa142d0e.bindTooltip(
+                `<div>
+                     Jaipur Zoo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8924ae3f6704a0c51300590b8e5cf57a = L.marker(
+                [26.9534584, 75.8461235],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_7b5edbd87f7faa02b1803497993b68ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8924ae3f6704a0c51300590b8e5cf57a.setIcon(icon_7b5edbd87f7faa02b1803497993b68ae);
+        
+    
+        var popup_e32286cd6a88c273c31cd98704881592 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af6af4e5792ff9d0741faf6b051273c = $(`<div id="html_1af6af4e5792ff9d0741faf6b051273c" style="width: 100.0%; height: 100.0%;">Jal Mahal</div>`)[0];
+                popup_e32286cd6a88c273c31cd98704881592.setContent(html_1af6af4e5792ff9d0741faf6b051273c);
+            
+        
+
+        marker_8924ae3f6704a0c51300590b8e5cf57a.bindPopup(popup_e32286cd6a88c273c31cd98704881592)
+        ;
+
+        
+    
+    
+            marker_8924ae3f6704a0c51300590b8e5cf57a.bindTooltip(
+                `<div>
+                     Jal Mahal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_763502c22ec4c4bb3b9cf5f0e4db4086 = L.marker(
+                [26.9430691, 75.8246528],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_0995929500e1732d45d8c6180ce0eea5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_763502c22ec4c4bb3b9cf5f0e4db4086.setIcon(icon_0995929500e1732d45d8c6180ce0eea5);
+        
+    
+        var popup_94be9c6ba6ee47c313408e71e9093123 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1bd81633f3ed0a049bb482d76a061e7 = $(`<div id="html_d1bd81633f3ed0a049bb482d76a061e7" style="width: 100.0%; height: 100.0%;">Gaitor Ki Chhatriyan</div>`)[0];
+                popup_94be9c6ba6ee47c313408e71e9093123.setContent(html_d1bd81633f3ed0a049bb482d76a061e7);
+            
+        
+
+        marker_763502c22ec4c4bb3b9cf5f0e4db4086.bindPopup(popup_94be9c6ba6ee47c313408e71e9093123)
+        ;
+
+        
+    
+    
+            marker_763502c22ec4c4bb3b9cf5f0e4db4086.bindTooltip(
+                `<div>
+                     Gaitor Ki Chhatriyan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11f38787cd927528ca1ac0e410d86bf4 = L.marker(
+                [26.9150353, 75.8179325],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_8e58120d467bf5e88808c83b8488cfb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11f38787cd927528ca1ac0e410d86bf4.setIcon(icon_8e58120d467bf5e88808c83b8488cfb1);
+        
+    
+        var popup_bc72becb990a89c74632e4bf96670d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6affd27f47d12de526df68b47653ae1 = $(`<div id="html_a6affd27f47d12de526df68b47653ae1" style="width: 100.0%; height: 100.0%;">Ramniwas Bagh</div>`)[0];
+                popup_bc72becb990a89c74632e4bf96670d43.setContent(html_a6affd27f47d12de526df68b47653ae1);
+            
+        
+
+        marker_11f38787cd927528ca1ac0e410d86bf4.bindPopup(popup_bc72becb990a89c74632e4bf96670d43)
+        ;
+
+        
+    
+    
+            marker_11f38787cd927528ca1ac0e410d86bf4.bindTooltip(
+                `<div>
+                     Ramniwas Bagh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_829ce02a30ee8e17a9595d7308e06143 = L.marker(
+                [26.8763415, 75.8091635],
+                {}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var icon_e7e0ad3afc710d175a54bafb0edd9963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_829ce02a30ee8e17a9595d7308e06143.setIcon(icon_e7e0ad3afc710d175a54bafb0edd9963);
+        
+    
+        var popup_10528c67b0ecd183dc49c75fa7532866 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e792cdcd7a081e5d4d6e272e2473d3cd = $(`<div id="html_e792cdcd7a081e5d4d6e272e2473d3cd" style="width: 100.0%; height: 100.0%;">Jawahar Kala Kendra</div>`)[0];
+                popup_10528c67b0ecd183dc49c75fa7532866.setContent(html_e792cdcd7a081e5d4d6e272e2473d3cd);
+            
+        
+
+        marker_829ce02a30ee8e17a9595d7308e06143.bindPopup(popup_10528c67b0ecd183dc49c75fa7532866)
+        ;
+
+        
+    
+    
+            marker_829ce02a30ee8e17a9595d7308e06143.bindTooltip(
+                `<div>
+                     Jawahar Kala Kendra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9c3780a1d7a104dcfbb54114d34462bd = L.polyline(
+                [[26.9240458, 75.8267144], [26.9257943, 75.8236714], [26.924762, 75.82456], [26.9123097, 75.8211759]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+    
+            var poly_line_e1f6297155de035c7808265b3018aa52 = L.polyline(
+                [[26.9534584, 75.8461235], [26.9430691, 75.8246528], [26.9150353, 75.8179325], [26.8763415, 75.8091635]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7665028f166f11a747379b9f0b307bd3);
+        
+</script>
+</html>
